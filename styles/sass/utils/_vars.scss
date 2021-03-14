@@ -1,0 +1,46 @@
+// ========================
+// = Font Settings ========
+// ========================
+
+    // == Font Stack ==
+    @import "fonts";
+
+    $font_stack-primary: "Spartan", sans-serif;
+
+    // == Font Weight ==
+
+    $font_weight: (
+        normal: 400,
+        semi: 500,
+        bold: 700,
+    );
+
+    // == Font Size ==
+    $font_sizes: (
+        xsmall: .6rem,
+        small: .8rem,
+        normal: 1rem,
+        large: 1.2rem,
+        xlarge: 3rem,
+    );
+    
+// ========================
+// = Color Settings =======
+// ========================
+
+    // == Color Def ==
+    $colors: (
+        DarkGrayishMagenta: hsl(303, 10%, 53%),
+        LightGrayishMagenta: hsl(300, 24%, 96%),
+        White: hsl(0, 0%, 100%),
+        VeryDarkMagenta: hsl(300, 43%, 22%),
+        Pink: hsl(333, 80%, 67%)
+    );
+
+// ========================
+// = Break Point Settings =
+// ========================
+
+$break_points: (
+    desktop: 1440px,
+);

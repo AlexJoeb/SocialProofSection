@@ -1,0 +1,62 @@
+.reviews {
+  flex-basis: 100%;
+  @include mq(desktop) {
+    height: 250px;
+    @include flex{
+      justify-content: space-between;
+    }
+  }
+  &__card {
+
+    @include mq(desktop)  {
+      flex-basis: 32%;
+
+      &:nth-of-type(2) {
+        transform: translateY(15px);
+      }
+
+      &:nth-of-type(3) {
+        transform: translateY(30px);
+      }
+    }
+    background: red;
+    border-radius: 10px;
+    background: color(VeryDarkMagenta);
+    padding: 30px;
+    font-size: fs(small);
+
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+
+    @include flex($dir: column);
+
+    &__info {
+      @include flex {
+        align-items: center;
+
+        img {
+          width: 40px; height: 40px;
+          border-radius: 100%;
+          margin-right: 15px;
+        }
+
+        &--name {
+          color: color(White);
+          font-weight: bold;
+        }
+
+        &--verified {
+          color: color(Pink);
+          margin-top: 5px;
+        }
+      }
+    }
+
+    &--text {
+      color: color(White);
+      margin-top: 15px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+#design {
+  &-top, &-bottom {
+    &.mobile {
+      display: block;
+      @include mq(desktop) {
+        display: none;
+      }
+    }
+    &.desktop {
+      display: none;
+      @include mq(desktop) {
+        display: block;
+      }
+    }
+  }
+
+  &-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

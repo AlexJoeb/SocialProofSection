@@ -1,0 +1,30 @@
+.text {
+  flex-basis: 100%;
+  text-align: center;
+
+  h1 {
+    font-weight: fw(bold);
+    font-size: fs(large);
+    color: color(VeryDarkMagenta);
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: color(DarkGrayishMagenta);
+  }
+
+  @include mq(desktop){
+    flex-basis: 48%;
+    margin-right: auto;
+    text-align: left;
+    @include flex($dir: column);
+
+    h1 {  
+      font-size: fs(xlarge);
+    }
+
+    p {
+      font-size: fs(large);
+    }
+  }
+}
